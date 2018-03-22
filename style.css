@@ -81,8 +81,28 @@ tbody td a[href$=".m4a"]:before {
 tbody td a[href$=".webm"]:before,
 tbody td a[href$=".mp4"]:before,
 tbody td a[href$=".mpeg"]:before,
+tbody td a[href$=".ogv"]:before,
+tbody td a[href$=".mov"]:before,
+tbody td a[href$=".flv"]:before,
 tbody td a[href$=".avi"]:before {
     content: url(https://www.c3d2.de/images/mime/video.png);
+    padding-right: 0.5em;
+}
+tbody td a[href$=".jpeg"]:before,
+tbody td a[href$=".jpg"]:before,
+tbody td a[href$=".gif"]:before,
+tbody td a[href$=".webp"]:before,
+tbody td a[href$=".svg"]:before,
+tbody td a[href$=".svgz"]:before,
+tbody td a[href$=".svg.gz"]:before,
+tbody td a[href$=".png"]:before {
+    content: url(https://www.c3d2.de/images/mime/image.png);
+    padding-right: 0.5em;
+}
+tbody td a[href$=".rss"]:before,
+tbody td a[href$=".atom"]:before,
+tbody td a[href$=".xml"]:before {
+    content: url(https://www.c3d2.de/images/mime/feed.png);
     padding-right: 0.5em;
 }
 tbody td a[href$=".torrent"]:before {
@@ -93,8 +113,30 @@ tbody td a[href$=".sha1"]:before {
     content: url(https://www.c3d2.de/images/mime/system.png);
     padding-right: 0.5em;
 }
+tbody td a[href$=".zip"]:before,
+tbody td a[href$=".tar"]:before,
+tbody td a[href$=".tar.gz"]:before,
+tbody td a[href$=".tar.bz2"]:before,
+tbody td a[href$=".tar.xz"]:before,
+tbody td a[href$=".deb"]:before,
+tbody td a[href$=".rpm"]:before {
+    content: url(https://www.c3d2.de/images/mime/pkg.png);
+    padding-right: 0.5em;
+}
+tbody td a[href$=".pdf"]:before,
+tbody td a[href$=".docx"]:before,
+tbody td a[href$=".odt"]:before,
+tbody td a[href$=".ods"]:before,
+tbody td a[href$=".html"]:before {
+    content: url(https://www.c3d2.de/images/mime/document.png);
+    padding-right: 0.5em;
+}
 tbody td a[href$="/"]:before {
     content: url(https://www.c3d2.de/images/mime/folder.png);
+    padding-right: 0.5em;
+}
+tbody td a[href="../"]:before {
+    content: url(https://www.c3d2.de/images/mime/up.png);
     padding-right: 0.5em;
 }
 
