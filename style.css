@@ -66,6 +66,38 @@ a.clear:hover {
     color:#333;
     cursor: pointer;
 }
+
+tbody td a:before {
+    content: url(https://www.c3d2.de/images/mime/text.png);
+    padding-right: 0.5em;
+}
+tbody td a[href$=".mp3"]:before,
+tbody td a[href$=".ogg"]:before,
+tbody td a[href$=".opus"]:before,
+tbody td a[href$=".m4a"]:before {
+    content: url(https://www.c3d2.de/images/mime/audio.png);
+    padding-right: 0.5em;
+}
+tbody td a[href$=".webm"]:before,
+tbody td a[href$=".mp4"]:before,
+tbody td a[href$=".mpeg"]:before,
+tbody td a[href$=".avi"]:before {
+    content: url(https://www.c3d2.de/images/mime/video.png);
+    padding-right: 0.5em;
+}
+tbody td a[href$=".torrent"]:before {
+    content: url(https://www.c3d2.de/images/mime/bittorrent.png);
+    padding-right: 0.5em;
+}
+tbody td a[href$=".sha1"]:before {
+    content: url(https://www.c3d2.de/images/mime/system.png);
+    padding-right: 0.5em;
+}
+tbody td a[href$="/"]:before {
+    content: url(https://www.c3d2.de/images/mime/folder.png);
+    padding-right: 0.5em;
+}
+
 /*------------------------------------*\
     Table (directory listing)
 \*------------------------------------*/
